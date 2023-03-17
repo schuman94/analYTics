@@ -33,3 +33,6 @@ def iniciar_recuento(entry_api_key, entry_directorio, entry_lista_canales):
         writer = csv.writer(f, delimiter='\t')
         for resultado in resultados:
             writer.writerow(resultado)
+
+    # Imprimir mensaje de éxito
+    print(f"Se ha ejecutado correctamente y se ha creado el archivo en la ruta: {destino}")
